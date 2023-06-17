@@ -1,4 +1,14 @@
 @media(max-width:990px) {
+    .main__img-figures {
+        width: 930px;
+        overflow: hidden;
+    }
+
+    .main__img-person {
+        width: 400px;
+        right: 180px;
+    }
+
     .feedback__opinion {
         display: none;
     }
@@ -12,6 +22,20 @@
 @media(max-width: 945px) {
     .container {
         max-width: 915px;
+    }
+
+    .main__img-figures {
+        width: 850px;
+        overflow: hidden;
+    }
+
+    .main__img-person {
+        width: 42%;
+        right: 200px;
+    }
+
+    .main__text {
+max-width: 200px;
     }
 
     .for-business__wrapper {
@@ -79,18 +103,22 @@
     }
 
     .review__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        /* justify-content: center; */
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
     }
 
-    .review__card2 {
-        position: absolute;
-        top: 350px;
-        left: 0;
+    .review__info {
+place-items: center;
     }
+
+    .review__title {
+        text-align: center;
+    }
+
 
     .contribution__wrapper {
+        padding: 60px 0 91px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -115,8 +143,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-
-
     .library__wrapper {
         display: flex;
         justify-content: space-between;
@@ -131,7 +157,6 @@
 
     .get-started__wrapper {
         display: block;
-
     }
 
     .get-started__content {
@@ -143,13 +168,15 @@
         margin: 20px auto;
     }
 
-
-
     .footer__wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 55px;
     }
+}
+
+@media(max-width:906px) {
+    
 }
 
 @media(max-width:790px) {

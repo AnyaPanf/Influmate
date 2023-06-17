@@ -810,7 +810,7 @@ div~img {
 }
 
 .review__cards {
-    height: 457px;
+    width: 484px;
 }
 
 .review__cards img {
@@ -819,10 +819,14 @@ div~img {
     object-fit: cover;
 }
 
+.review__info {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .review__inner {
     display: flex;
     padding: auto 0;
-
 }
 
 .review__title {
@@ -857,6 +861,7 @@ div~img {
 }
 
 .review__text {
+    max-width: 300px;
     margin-left: 40px;
 }
 
